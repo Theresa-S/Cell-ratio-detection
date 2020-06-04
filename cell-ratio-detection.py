@@ -39,7 +39,7 @@
 # Configuration
 
 # where are the files located?
-foldername = "//insert_your_folderpath_here/take_care_to_use_slashes/no_backslashes"
+foldername = "//insert_your_folderpath_here/take_care_to_use_slashes/no_backslashes/no_space_characters"
 
 # smoothing parameter, needs to be optimized
 spotDetection_GaussianBlur_sigma_GFP= 1;
