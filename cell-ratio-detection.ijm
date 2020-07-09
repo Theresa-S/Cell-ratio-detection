@@ -1,4 +1,8 @@
 //
+// Installation instructions:
+// * Activate the CLIJ and CLIJ2 update sites in Fiji
+//
+//
 // Configuration
 
 // where are the files located?
