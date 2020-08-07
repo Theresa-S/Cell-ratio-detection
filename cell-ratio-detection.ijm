@@ -125,11 +125,13 @@ for (i = 0; i < lengthOf(filelist); i++) {
 
 		// 
 		Ext.CLIJ2_pull(result_stack);
+		
+		// save result
+		dot = indexOf(input_stack, "."); 
+		title = substring(input_stack, 0, dot); 
+		saveAs(".tiff", foldername + "/" + title + ".tif");
     }
-        // save result
-	dot = indexOf(input_stack, "."); 
-	title = substring(input_stack, 0, dot); 
-	saveAs(".tiff", foldername + "/" + title + ".tif");
+        
 }
 	run("Close All");
 	
