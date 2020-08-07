@@ -131,9 +131,9 @@ for (i = 0; i < lengthOf(filelist); i++) {
 		title = substring(input_stack, 0, dot); 
 		saveAs(".tiff", foldername + "/" + title + ".tif");
     }
-        
+	run("Close All");        
 }
-	run("Close All");
+
 	
 	
 function detectSpots(image, sigma, noise) {
