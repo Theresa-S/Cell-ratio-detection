@@ -116,12 +116,12 @@ for (i = 0; i < lengthOf(filelist); i++) {
 		}
 
     	// 
-		Ext.CLIJ2_create3D(result_stack, width, height, 5, 16);
-		Ext.CLIJ2_copySlice(original1_stripe, result_stack, 0);
-		Ext.CLIJ2_copySlice(original2_stripe, result_stack, 1);
-		Ext.CLIJ2_copySlice(spotCount1_stripe, result_stack, 2);
-		Ext.CLIJ2_copySlice(spotCount2_stripe, result_stack, 3);
-		Ext.CLIJ2_copySlice(ratio_stripe, result_stack, 4);
+		Ext.CLIJ2_create3D(result_stack, width, height, 5, 32);
+		Ext.CLIJ2_copySlice(original1, result_stack, 0);
+		Ext.CLIJ2_copySlice(original2, result_stack, 1);
+		Ext.CLIJ2_copySlice(spotCount1, result_stack, 2);
+		Ext.CLIJ2_copySlice(spotCount2, result_stack, 3);
+		Ext.CLIJ2_copySlice(ratio, result_stack, 4);
 
 		// 
 		Ext.CLIJ2_pull(result_stack);
