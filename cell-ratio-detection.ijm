@@ -126,8 +126,14 @@ for (i = 0; i < lengthOf(filelist); i++) {
 		// 
 		Ext.CLIJ2_pull(result_stack);
     }
+        // save result
+	dot = indexOf(input_stack, "."); 
+	title = substring(input_stack, 0, dot); 
+	saveAs(".tiff", foldername + "/" + title + ".tif");
 }
-
+	run("Close All");
+	
+	
 function detectSpots(image, sigma, noise) {
 	setBatchMode(true);
 	Ext.CLIJ2_gaussianBlur2D(image, blurred, sigma, sigma);
@@ -139,7 +145,7 @@ function detectSpots(image, sigma, noise) {
 	close();
 	Ext.CLIJ2_getSumOfAllPixels(spots, spot_count);
 	setBatchMode(false);
-	return spot_count * 255;	
+	return spot_count / 255;	
 }
 
 	
