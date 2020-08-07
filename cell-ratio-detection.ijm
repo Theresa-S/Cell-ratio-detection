@@ -80,8 +80,6 @@ for (i = 0; i < lengthOf(filelist); i++) {
 
 
 				// calculate ratio if spots were found
-				s1 = 0;
-				s2 = 0;
 				r = 0;
 				
 				if (s2 > cutOff_DAPI && s1 > cutOff_GFP) {
